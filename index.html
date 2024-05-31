@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="disable-game">
+        <div class="round">
+            <p id="message">Press <b>R</b> for another round</p>
+            <div class="cpu-game">
+                <h3>You:</h3>
+                <p id="round-user-point"></p>
+                <div class="options">
+                    <span class="option user-options-round hidden">rock</span>
+                    <span class="option user-options-round hidden">paper</span>
+                    <span class="option user-options-round hidden">scissor</span>
+                </div>
+                <h3>CPU:</h3>
+                <p id="round-cpu-point"></p>
+                <div class="options">
+                    <span class="option cpu-options hidden">rock</span>
+                    <span class="option cpu-options hidden">paper</span>
+                    <span class="option cpu-options hidden">scissor</span>
+                </div>
+            </div>
+            <button class="reset">Reset</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Rock Paper Scissor</h1>
+        <div class="game">
+            <div class="left-side">
+                <div class="user-game">
+                    <h3>Choose one of them:</h3>
+                    <div class="options">
+                        <span class="option user-options">rock</span>
+                        <span class="option user-options">paper</span>
+                        <span class="option user-options">scissor</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right-side">
+                <div class="score">
+                    <h2>score:</h2>
+                    <div class="score-holder">
+                        <span class="user-score">
+                            You:<span class="user-points">0</span>
+
+                        </span>
+                        <span class="cpu-score">
+                            CPU:<span class="cpu-points">0</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sctipt.js"></script>
+</body>
+
+</html>

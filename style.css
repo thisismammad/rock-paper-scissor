@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    color: rgb(255, 255, 255);
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+.container {
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    background-image:url("white-neon-rock-paper-scissors-hand-signs-vector.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.container h1{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.game {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.473);
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    height: 65%;
+    border-radius: 20px;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.left-side {
+    flex: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.right-side {
+    flex: 1;
+    border-left: 1px dashed rgb(255, 255, 255);
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.option {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 40px;
+    border: 1px solid black;
+}
+
+.user-game .option {
+
+    cursor: pointer;
+}
+.user-game .options {
+
+    margin-top: 20px;
+}
+
+.cpu-game {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.user-game .option:hover {
+    background-color: rgb(67, 177, 250);
+}
+
+.hidden {
+    display: none;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.score-holder {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+.round {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f825;
+    backdrop-filter: blur(15px);
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: larger;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.reset{
+    background-color: #6dabfd;
+    border: none;
+    width: 100px;
+    height: 50px;
+    display: none;
+    border-radius: 10px;
+}
+
+.reset:hover {
+    background-color: #0263bdfd;
+}
+
+.disable-game {
+    z-index: 2;
+    background-color: #00000054;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+@media screen and (max-width:480px) {
+    .game{
+        flex-direction: column;
+    }
+    .right-side{
+        border-left: none;
+        border-top: 1px dashed rgb(255, 255, 255);
+    }
+
+}
