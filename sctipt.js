@@ -126,7 +126,7 @@ function endGame(winner) {
         message.style.fontSize = "larger";
         round.style.backgroundColor = "#00ff6225";
     } else {
-        message.textContent = "CPU Win!";
+        message.textContent = "You lose!";
         message.style.fontSize = "larger";
         round.style.backgroundColor = "#fa5e5e25";
     }
@@ -144,7 +144,3 @@ function reloadRound() {
     }
 }
 
-
-if ($(window).width() < 480) {
-    message.textContent = "Tap for another round";
-}
