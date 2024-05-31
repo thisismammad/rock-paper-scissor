@@ -87,6 +87,14 @@ document.addEventListener('keydown', (e) => {
             reloadRound();
             stopGame.style.display = "none";
         }
+
+    }
+});
+
+document.addEventListener('touchstart', () => {
+    if (!isEnd) {
+        reloadRound();
+        stopGame.style.display = "none";
     }
 });
 
@@ -134,4 +142,9 @@ function reloadRound() {
         cpuOptions[i].classList.add("hidden");
         userOptionsRound[i].classList.add("hidden");
     }
+}
+
+
+if ($(window).width() < 480) {
+    message.textContent = "Tap for another round";
 }
