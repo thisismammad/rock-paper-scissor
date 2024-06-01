@@ -28,7 +28,7 @@ h3 {
     width: 100%;
     padding: 20px;
     height: 100%;
-    background-image:url("white-neon-rock-paper-scissors-hand-signs-vector.jpg");
+    background-color: #00AFB9;
     background-size: cover;
     background-position: center;
 }
@@ -42,13 +42,15 @@ h3 {
 
 .game {
     margin: 10px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     background-color: rgba(0, 0, 0, 0.473);
     backdrop-filter: blur(2px);
-    padding: 20px;
-    height: 65%;
-    border-radius: 20px;
+    padding: 80px;
+    height: max-content;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
     align-items: center;
     border: 1px solid white;
 }
@@ -72,6 +74,7 @@ h3 {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 15px;
 }
 
 .option {
@@ -105,7 +108,7 @@ h3 {
 
 
 .user-game .option:hover {
-    background-color: rgb(67, 177, 250);
+    background-color: #FFD500;
 }
 
 .hidden {
@@ -172,6 +175,7 @@ h3 {
 @media screen and (max-width:480px) {
     .game{
         flex-direction: column;
+        padding: 20px;
     }
     .right-side{
         border-left: none;
