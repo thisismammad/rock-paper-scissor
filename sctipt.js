@@ -128,7 +128,7 @@ function endGame(winner) {
     } else {
         message.textContent = "You lose!";
         message.style.fontSize = "larger";
-        round.style.backgroundColor = "#fa5e5e25";
+        round.style.backgroundColor = "#fc32324f";
     }
 
     resetBtn.addEventListener('click', () => {
