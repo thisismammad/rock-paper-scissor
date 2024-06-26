@@ -91,10 +91,13 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-document.addEventListener('touchstart', () => {
+document.querySelector(".round").addEventListener('touchstart', () => {
     if (!isEnd) {
         reloadRound();
-        stopGame.style.display = "none";
+        setTimeout(()=>{
+
+            stopGame.style.display = "none";
+        },100)
     }
 });
 
